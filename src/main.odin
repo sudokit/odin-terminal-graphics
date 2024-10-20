@@ -37,6 +37,7 @@ main :: proc() {
 		update(dt)
 
 		// draw
+		tb.clear()
 		draw()
 		tb.present()
 	}
