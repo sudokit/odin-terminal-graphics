@@ -2,5 +2,5 @@ build:
     mkdir -p build && odin build src -out:./build/main
 
 
-run width="800" height="600": build
-	./run_kitty.sh {{width}} {{height}} 0 yes ./build/main
+run: build
+	./run_kitty.sh 800 600 0 yes ./build/main
